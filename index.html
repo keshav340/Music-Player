@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Music Player</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+
+<body>
+      <!-- top header -->
+      <div class="wrapper">
+            <div class="top-bar">
+              <i class="fas fa-chevron-down"></i>
+              <span>Now Playing</span>
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
+      
+      
+       <!-- image area -->
+       <div class="img-box">
+           <div class="img-area">
+                <img src="images/song3.jpg" alt="song-cover">
+         </div>
+       </div>
+     
+      
+       <!-- song details -->
+       <div class="song-details">
+            <p id="song-name">EVERLAST</p>
+            <p id="artist">Alan Wayne</p>
+       </div>
+       
+
+       <!-- progress area --> 
+       <div class="progress-area" id ="progress-area">
+            <div class="progress-bar" id ="progress-bar">
+              <audio id="main-audio" src="audios/song3.mp3" ></audio>
+            </div>
+            <div class="song-timer">
+              <span id="current-time">0:00</span>
+              <span id="max-duration">0:54</span>
+         </div>
+       </div>
+      
+       <!-- controls -->
+       <div class="controls">
+            <i id="repeat-playlist" class="material-icons" title="Playlist looped">repeat</i>
+            <i id = "prev" class="fas fa-backward" title="previous"></i>
+            <i id ="play" class="fas fa-play" title="play-pause"></i>
+            <i id = "next" class="fas fa-forward" title="next"></i>
+            <i id="more-music" class="material-icons">queue_music</i>
+       </div>
+       
+       <!-- music list -->
+       <!-- <div class="music-list">
+            <div class="header">
+              <div class="row">
+                 <i class= "list material-icons">queue_music</i>
+                 <span>Music list</span>
+                 <i id="close" class="material-icons">close</i>
+              </div>
+              
+              <ul>
+                  here li list are coming from js
+                  <li>
+                    <div class="row">
+                      <span>Right Now</span>
+                      <p>Audio Library</p>
+                    </div>
+                    <span class="audio-duration">3:40</span>
+                  </li>
+             </ul> 
+           </div>
+        </div> -->
+      </div>
+      
+      
+      <!-- <script src="/music-list.js"></script> -->
+  <script src="script.js"></script>
+
+</body>
+</html>
